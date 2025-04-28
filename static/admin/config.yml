@@ -16,6 +16,10 @@ collections:
       - label: "Publish Date"
         name: "date"
         widget: "datetime"
-        format: "YYYY-MM-DDTHH:mm:ss"
+        default: "{{now}}"  # Ensures the current datetime is used when creating new posts
+        format: "YYYY-MM-DDTHH:mm:ss[Z]"  # Stores the time in ISO 8601 format
+        date_format: "YYYY-MM-DD"  # Displays only the date in the UI (optional)
+        time_format: "HH:mm"  # Displays only the time in the UI (optional)
+        picker_utc: false  # Uses local timezone instead of UTC
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
