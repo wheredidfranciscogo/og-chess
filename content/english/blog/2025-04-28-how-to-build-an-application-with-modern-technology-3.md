@@ -1,7 +1,7 @@
 ---
 draft: false
 author: John Doe
-title: How to build an Application with modern Technology 3
+title: How 3
 date: 2025-04-28T10:56:00.000Z
 tags:
   - nextjs
